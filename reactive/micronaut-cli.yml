@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.samueltorga.reactive
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [annotation-api, app-name, assertj, data, data-r2dbc, graalvm, h2, http-client, java, java-application, jdbc-hikari, jooq, junit, kafka, log4j2, lombok, maven, micronaut-aop, netty-server, r2dbc, reactor, reactor-http-client, readme, serialization-bson, serialization-jackson, shade, test-resources, yaml]

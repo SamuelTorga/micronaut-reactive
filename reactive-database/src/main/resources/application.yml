@@ -1,0 +1,17 @@
+micronaut:
+  application:
+    name: reactive
+  server:
+    port: 8081
+r2dbc:
+  datasources:
+    default:
+      dialect: MYSQL
+      password: ${JDBC_PASSWORD:"admin"}
+      url: ${JDBC_URL:`r2dbc:pool:mysql://127.0.0.1:3306/reactive`}
+      username: ${JDBC_USER:root}
+      driver: ${JDBC_DRIVER:mysql}
+netty:
+  default:
+    allocator:
+      max-order: 3
