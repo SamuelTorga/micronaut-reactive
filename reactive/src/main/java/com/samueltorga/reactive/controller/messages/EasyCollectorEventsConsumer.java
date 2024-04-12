@@ -20,7 +20,7 @@ public class EasyCollectorEventsConsumer {
     @Inject
     private final ReactorHttpClient httpClient;
 
-    @Topic("EASYCOLLECTOR-EVENTS")
+//    @Topic("EASYCOLLECTOR-EVENTS")
     void receive(String event) {
         log.info("Event Received: {}", event);
 //        MutableHttpRequest<EventCreate> request = HttpRequest.POST(URI.create("http://localhost:8081/event"), EventCreate.builder()

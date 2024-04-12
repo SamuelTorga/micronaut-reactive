@@ -6,5 +6,11 @@ netty:
     allocator:
       max-order: 3
 kafka:
+  producers:
+    default:
+      executor: io
   bootstrap:
-    servers: localhost:9092
+    servers:
+      - localhost:8097
+      - localhost:8098
+      - localhost:8099

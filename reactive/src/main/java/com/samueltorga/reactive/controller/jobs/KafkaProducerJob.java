@@ -11,7 +11,7 @@ public class KafkaProducerJob {
 
     private final EasyCollectorEventProducer easyCollectorEventProducer;
 
-    @Scheduled(fixedDelay = "40s")
+    @Scheduled(fixedDelay = "5s")
     void produceMessage() {
         easyCollectorEventProducer.sendEvent("TEST");
     }
